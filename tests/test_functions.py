@@ -9,8 +9,6 @@ from src.main import sum_of_digits, fibonacci
         (10, 55),
     ]
 )
-
-
 def test_function_fibonacci(n, ans):
     assert fibonacci(n) == ans
 
@@ -22,7 +20,5 @@ def test_function_fibonacci(n, ans):
         (100, 1),
     ]
 )
-
-
 def test_function_sum_of_digits(num, sum):
     assert sum_of_digits(num) == sum
