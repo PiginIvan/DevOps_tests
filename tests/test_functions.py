@@ -1,5 +1,6 @@
 import pytest
-from src.main import *
+from src.main import sum_of_digits, fibonacci
+
 
 @pytest.mark.parametrize(
     ('n', 'ans'), [
@@ -9,8 +10,10 @@ from src.main import *
     ]
 )
 
+
 def test_function_fibonacci(n, ans):
     assert fibonacci(n) == ans
+
 
 @pytest.mark.parametrize(
     ('num', 'sum'), [
@@ -19,6 +22,7 @@ def test_function_fibonacci(n, ans):
         (100, 1),
     ]
 )
+
 
 def test_function_sum_of_digits(num, sum):
     assert sum_of_digits(num) == sum

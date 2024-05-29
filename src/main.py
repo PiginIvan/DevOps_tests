@@ -3,6 +3,7 @@ def fibonacci(n):
         return 1
     return fibonacci(n - 1) + fibonacci(n - 2)
 
+
 def sum_of_digits(num):
     sum = 0
     while num > 0:
